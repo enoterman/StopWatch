@@ -1,0 +1,16 @@
+public class TestStopWatch
+{
+    public static void main(String[] args)
+    {
+        StopWatch s= new StopWatch();
+        Scanner f= new Scanner(System.in);
+        String input="";
+        System.out.println("Type 'start' to begin");
+        input= f.nextLine();
+        if(input.equalsIgnoreCase("start")) s.start();
+        System.out.println("Type 'stop' to end");
+        input= f.nextLine();
+        if(input.equalsIgnoreCase("stop"))s.stop();
+        System.out.println(s.stop()+" Seconds");
+    }
+}
